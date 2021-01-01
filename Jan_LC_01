@@ -1,0 +1,21 @@
+# cook your dish here
+try:
+    t = int(input())
+    while t:
+        
+        n,k,d = map(int,input().split(" "))
+        su = 0
+        problems = list(map(int,input().split(" ")))
+        for i in range(len(problems)):
+            su += problems[i]
+        maxi = su // k
+        if n ==1 and problems[0] < k:
+            print(0)
+        elif maxi>d:
+            print(d)
+        else:
+            print(maxi)
+        
+        t -=1
+except:
+    pass
