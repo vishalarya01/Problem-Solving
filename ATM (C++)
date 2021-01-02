@@ -1,0 +1,27 @@
+'''
+Solution by Pandz18 in C++
+Date : 2nd January 2021
+'''
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float withdraw ;
+    float balance ;
+    
+    cout<<"enter withdrawl amount as an integer only"<<endl;
+    cin>>withdraw;
+    cout<<"Enter your current Bank Balance";
+    cin>>balance;
+    
+    if(fmod(withdraw,5)==0.0 && withdraw<=balance)        //fmod() calulates the modulus of two float points 
+    {                                                 
+        balance = balance-withdraw-0.50;                 //a reduction of 0.5 is due to witdrawl fees 
+        cout<<"Balance ="<<balance;
+        
+    } else {
+        cout<<"Unavailable to perform action ";         //prints the message if the withdrawl amount is either more than the balance or not a multiple of 5
+    }
+    return 0;                                           
+}
