@@ -1,0 +1,16 @@
+'''
+Solved by Pandz18 in C++
+January 4 2021
+'''
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i;
+    cin>>i;
+    cout<<i;
+    return 0;
+}
+
