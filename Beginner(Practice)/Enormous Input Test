@@ -37,4 +37,5 @@ int main()
         cout<<A[i] <<endl;
     }
     cout<<"Number of values that are  divisble by "<<" "<<k<<" is :"<<" " << count ;
+return 0;
 }
